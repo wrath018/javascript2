@@ -1,0 +1,25 @@
+body {
+	display: flex;
+	overflow: hidden;
+  justify-content: center;
+	background-color: #ebe9e1;
+	transform: translateY(88vh);
+}
+
+.rainbow {
+	width: 20vh;
+	height: 20vh;
+	border-radius: 50%;
+}
+
+.summer {
+	box-shadow: 0 0 0 3em #fdd9ff, 0 0 0 6em #c6abff, 0 0 0 9em #6ea6f5, 0 0 0 12em #79d991, 0 0 0 15em #fff47d, 0 0 0 18em #ffae78, 0 0 0 21em #ff776e
+}
+
+.winter {
+	box-shadow: 0 0 0 3em lightblue, 0 0 0 6em lightpink, 0 0 0 9em #6ea6f5, 0 0 0 12em blue, 0 0 0 15em purple, 0 0 0 18em #ffae78, 0 0 0 21em #ff776e
+}
+
+.spring {
+	box-shadow: 0 0 0 3em yellowgreen, 0 0 0 6em lightyellow, 0 0 0 9em lightgoldenrodyellow, 0 0 0 12em yellow, 0 0 0 15em coral, 0 0 0 18em lightcoral, 0 0 0 21em orange
+}

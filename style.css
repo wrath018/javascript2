@@ -1,0 +1,25 @@
+
+#pic:hover{
+     filter: grayscale(0%);
+    transition: 5s;  
+   transform: rotateZ(360deg) scale(1.2, 1.2)
+   
+       
+} 
+#pic {
+ 
+    filter: grayscale(100%);
+  transition: 1s;  
+   transform: rotateZ(-360deg)
+}
+
+#test:hover{
+     background-color: black;
+     color: yellow;
+}
+
+
+#map {
+     height:100%;
+     width: 100%;
+}

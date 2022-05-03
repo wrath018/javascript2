@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe checkout</title>
+    <script src="https://js.stripe.com/v3/"></script>
+     
+</head>
+<body>
+    <button id="checkout">Checkout</button>
+
+    <script >
+        var stripe=Stripe("pk_test_51KtTD8SEH6UBCCzI6B5yZBYPn7U13c7lZq1xDaLaPp8ENcLEc7mEcT8IANtqaW1FUugXWlMw1Lf567KzIEzL3VNq00e4ekTk7a")
+        
+        document.getElementById("checkout").addEventListener('click',function(){
+            stripe.redirectToCheckout({
+                lineItems:[
+                {
+                    price:"price_1KtVzUSEH6UBCCzId1GFzJPJ",
+                    quantity:2,
+                },
+                ],
+                mode:"subscription",
+                successUrl:"https://www.google.com",
+                 cancelUrl:"https://www.twitter.com",     
+            })
+            .then(function(result){
+                alert(result);
+            })
+        })
+    </script>
+</body>
+<script src="stripeAPI.js"></script>
+
+</html>
