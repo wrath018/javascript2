@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="firstQuestion.css">
+    <title>Document</title>
+</head>
+<body>
+    <form oninput="res01.value=res0.value; 
+    res02.value=res1.value;  
+    res03.value=res2.value;
+    res04.value=res3.value; "
+       >
+    <div class="row">
+        <div class="column">
+          <div class="card">
+              ID Card Form<br>
+              <br>
+              <br>
+              <div id="add">
+                <button >Add New Field</button>
+              </div>
+            Name : <input name="res0" id="01" type="text" oninput="">
+            <div>
+            DOB : <input name="res1" id="02" type="date" onchange="change()" > </div>
+            <div>
+                Class : <input name="res2" id="03" type="text" onchange="change()">
+            </div>
+            <div>
+                Photo :<input name="res3" id="04" type="file" onchange="change()">
+            </div>
+          </div>
+          <!-- <div class="column01">
+            <div class="card"> -->
+        </div>
+
+
+        <div class="row">
+            <div class="column1">
+              <div class="card">
+                  California University
+                  <br>
+                  <br>
+                  <br>
+                  <div>
+                    Name: <output name="res01"></output>
+                  </div>
+                  <div>
+                    DOB : <output  name="res02"></output>
+                  </div>
+                  <div>
+                    Class : <output name="res03"></output>
+                  </div>
+                  <div>
+                    Gender : <output name="res04"></output>
+                  </div>
+                  <div>
+                    Father's Name : <output name="res05"></output>
+                  </div>
+
+              </div>
+            </div>
+
+
+        </form>
+    
+</body>
+<script src="firstQuestion.js"></script>
+</html>
