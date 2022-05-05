@@ -20,7 +20,7 @@
               <br>
               <br>
               <div id="add">
-                <button >Add New Field</button>
+                <input type="button" class="inputype" value="Add New Field" onclick="createNewElement()"/>
               </div>
             Name : <input name="res0" id="01" type="text" oninput="">
             <div>
@@ -28,14 +28,14 @@
             <div>
                 Class : <input name="res2" id="03" type="text" onchange="change()">
             </div>
+            <div id="newElementId" class="newcl"></div>
             <div>
                 Photo :<input name="res3" id="04" type="file" onchange="change()">
             </div>
           </div>
-          <div class="column">
-            <div class="card">..</div>
-          </div>
+          
         </div>
+        
 
 
         <div class="row">
@@ -63,9 +63,28 @@
 
               </div>
             </div>
+            
 
 
         </form>
+        <div class="inputtype">
+            <div class="type">
+            <h3>Please mention the label and type of field</h3>
+            <label>Label: </label>
+            <input type="text" id="label">
+            <label>type of field: </label>
+            <select id="fieldtype">
+                <option>text</option>
+                <option>date</option>
+                <option>number</option>
+            </select>
+            <br>
+            <button onclick="hidediv()">submit</button>
+            <span class="modal-close">X</span>
+            </div>
+        </div>
+
+       
     
 </body>
 <script src="firstQuestion.js"></script>

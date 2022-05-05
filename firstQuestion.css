@@ -52,3 +52,36 @@
   #add{
     top:40%;  
   }
+
+
+
+
+
+.inputtype{
+  position: fixed; 
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left:0;
+  background-color: rgba(0,0,0,0 );
+  visibility: hidden;
+  display: flex; 
+  justify-content: center;
+  align-items:center ;
+  transition: visibility 0s, opacity 0.5s;
+}
+.type{
+  position: relative; 
+  background-color: aliceblue;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+}
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}

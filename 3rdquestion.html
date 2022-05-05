@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="toma.css">
+  <link rel="stylesheet" href="3rdquestion.css">
   <title>Document</title>
 </head>
 <body>
@@ -13,22 +13,29 @@
     <form>
       <h3>ID Card Form</h3>
       <input type="button" class="inputype" value="Add New Field" onclick="createNewElement();"/>
-      <label>Full Name</label>
-      <input type="text" id="inName" placeholder="Your name..." oninput="prev()">
-      <label>Date of birth</label>
-      <input type="date" id="inBirth"  placeholder="Date of birth..." oninput="prev()">
+      <label> Name</label>
+      <input type="text" id="inName"  oninput="prev()">
+      <label>DOB</label>
+      <input type="date" id="inBirth"  oninput="prev()">
       <label>Class</label>
-      <input type="text" id="class"  placeholder="class" oninput="prev()">
+      <input type="text" id="class"  " oninput="prev()">
       
       <div id="newElementId" class="newcl"></div>
-      <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+      <div>Photo
+      <input type="file" id="file" accept="image/*" onchange="loadImage(event)"></div>
       <br>
+
+      
       
       
     </form>
+    <br>
+    <br>
+    <br>
       <!-- <button type="submit" id="preview">Preview</button> -->
 
-
+     <br>
+     <br>
     <div class="container">
       <canvas id="result" class="card">
 
@@ -52,7 +59,7 @@
 
     </canvas>
     <br>
-    <label for="file" class="upload">Upload an Image</label>
+  
   </div>
 
   <div class="inputtype">
@@ -73,6 +80,6 @@
   </div>
 
 
-  <script src="toma.js"></script>
+  <script src="3rdquestion.js"></script>
 </body>
 </html>
